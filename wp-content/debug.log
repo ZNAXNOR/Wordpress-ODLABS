@@ -1,0 +1,61 @@
+[14-Jul-2025 17:09:16 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:17 UTC] PHP Warning:  Trying to access array offset on false in /var/www/html/wp-includes/class-wp-recovery-mode-email-service.php on line 367
+[14-Jul-2025 17:09:17 UTC] PHP Warning:  Trying to access array offset on false in /var/www/html/wp-includes/class-wp-recovery-mode-email-service.php on line 368
+[14-Jul-2025 17:09:18 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:27 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:27 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:29 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:30 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:30 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:31 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:31 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:35 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:09:36 UTC] PHP Parse error:  syntax error, unexpected token "," in /var/www/html/wp-content/themes/odlabs/functions.php on line 3
+[14-Jul-2025 17:56:47 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "odlabs-style" not found or invalid function name in /var/www/html/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /var/www/html/wp-includes/script-loader.php(2299): do_action('wp_enqueue_scri...')
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-includes/general-template.php(3192): do_action('wp_head')
+#7 /var/www/html/wp-content/themes/odlabs/front-page.php(12): wp_head()
+#8 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/class-wp-hook.php on line 324
+[14-Jul-2025 17:56:48 UTC] PHP Fatal error:  Uncaught TypeError: call_user_func_array(): Argument #1 ($callback) must be a valid callback, function "odlabs-style" not found or invalid function name in /var/www/html/wp-includes/class-wp-hook.php:324
+Stack trace:
+#0 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#1 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#2 /var/www/html/wp-includes/script-loader.php(2299): do_action('wp_enqueue_scri...')
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): wp_enqueue_scripts('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-includes/general-template.php(3192): do_action('wp_head')
+#7 /var/www/html/wp-content/themes/odlabs/front-page.php(12): wp_head()
+#8 /var/www/html/wp-includes/template-loader.php(106): include('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(19): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/class-wp-hook.php on line 324
+[14-Jul-2025 18:15:09 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/wp-content/themes/odlabs/functions.php on line 26
+[14-Jul-2025 18:17:10 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/wp-content/themes/odlabs/functions.php on line 26
+[14-Jul-2025 18:19:11 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/wp-content/themes/odlabs/functions.php on line 26
+[14-Jul-2025 18:19:33 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/wp-content/themes/odlabs/functions.php on line 26
+[14-Jul-2025 18:19:34 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/wp-content/themes/odlabs/functions.php on line 26
+[14-Jul-2025 18:19:34 UTC] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/wp-content/themes/odlabs/functions.php on line 26
+[14-Jul-2025 18:20:09 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:20:10 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:20:11 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:20:12 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:16 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:18 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:19 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:49 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:50 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:52 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:53 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[14-Jul-2025 18:22:54 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
