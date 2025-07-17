@@ -1,4 +1,28 @@
 <?php
+
+function odlabs_theme_support()
+{
+    add_theme_support("title-tag");
+    add_theme_support("post-thumbnails");
+    add_theme_support("html5", [
+        "search-form",
+        "comment-form",
+        "comment-list",
+        "gallery",
+        "caption",
+    ]);
+    add_theme_support("custom-logo", [
+        "height" => 96,
+        "width" => 316,
+        "flex-height" => true,
+        "flex-width" => true,
+    ]);
+}
+
+add_action("after_setup_theme", "odlabs_theme_support");
+
+register_nav_menus(["primary-menu" => "Top Navigation"]);
+
 function odlabs_register_styles()
 {
     $version = wp_get_theme()->get("Version");
