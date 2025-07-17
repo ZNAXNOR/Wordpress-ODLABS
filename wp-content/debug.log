@@ -59,3 +59,807 @@ Stack trace:
 [14-Jul-2025 18:22:52 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
 [14-Jul-2025 18:22:53 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
 [14-Jul-2025 18:22:54 UTC] PHP Warning:  Undefined variable $version in /var/www/html/wp-content/themes/odlabs/functions.php on line 31
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE UNIQUE INDEX `wp_yoast_migrations_version` ON `wp_yoast_migrations`(`version`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: ROLLBACK | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: UNIQUE INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE UNIQUE I...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE UNIQUE I...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE UNIQUE I...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(136): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_migrat...', 'version', Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(117): Yoast\WP\Lib\Migrations\Adapter->create_schema_version_table()
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#14 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#15 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#16 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#17 {main}</pre>
+ for query CREATE UNIQUE INDEX `wp_yoast_migrations_version` ON `wp_yoast_migrations`(`version`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\Lib\Migrations\Adapter->create_schema_version_table, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `object_type_and_sub_type` ON `wp_yoast_indexable`(`object_type`, `object_sub_type`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `o...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `o...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `o...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151840_WpYoastIndexable.php(336): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151840_WpYoastIndexable.php(323): Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_indexes('wp_yoast_indexa...')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151840_WpYoastIndexable.php(26): Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_table()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->up()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20171228151840, 'Yoast\\WP\\SEO\\Co...')
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#16 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#17 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#18 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#19 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#20 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#21 {main}</pre>
+ for query CREATE INDEX `object_type_and_sub_type` ON `wp_yoast_indexable`(`object_type`, `object_sub_type`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->up, Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_table, Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_indexes, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `permalink_hash` ON `wp_yoast_indexable`(`permalink_hash`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `p...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `p...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `p...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', 'permalink_hash', Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151840_WpYoastIndexable.php(347): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', 'permalink_hash', Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151840_WpYoastIndexable.php(323): Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_indexes('wp_yoast_indexa...')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151840_WpYoastIndexable.php(26): Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_table()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->up()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20171228151840, 'Yoast\\WP\\SEO\\Co...')
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#16 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#17 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#18 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#19 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#20 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#21 {main}</pre>
+ for query CREATE INDEX `permalink_hash` ON `wp_yoast_indexable`(`permalink_hash`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->up, Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_table, Yoast\WP\SEO\Config\Migrations\WpYoastIndexable->add_indexes, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `post_taxonomy` ON `wp_yoast_primary_term`(`post_id`, `taxonomy`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `p...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `p...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `p...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_primar...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151841_WpYoastPrimaryTerm.php(60): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_primar...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastPrimaryTerm->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20171228151841, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `post_taxonomy` ON `wp_yoast_primary_term`(`post_id`, `taxonomy`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastPrimaryTerm->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `post_term` ON `wp_yoast_primary_term`(`post_id`, `term_id`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `p...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `p...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `p...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_primar...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20171228151841_WpYoastPrimaryTerm.php(71): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_primar...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastPrimaryTerm->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20171228151841, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `post_term` ON `wp_yoast_primary_term`(`post_id`, `term_id`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastPrimaryTerm->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `indexable_id` ON `wp_yoast_indexable_hierarchy`(`indexable_id`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `i...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `i...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `i...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', 'indexable_id', Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20191011111109_WpYoastIndexableHierarchy.php(61): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', 'indexable_id', Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastIndexableHierarchy->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20191011111109, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `indexable_id` ON `wp_yoast_indexable_hierarchy`(`indexable_id`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastIndexableHierarchy->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `ancestor_id` ON `wp_yoast_indexable_hierarchy`(`ancestor_id`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `a...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `a...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `a...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', 'ancestor_id', Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20191011111109_WpYoastIndexableHierarchy.php(62): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', 'ancestor_id', Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastIndexableHierarchy->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20191011111109, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `ancestor_id` ON `wp_yoast_indexable_hierarchy`(`ancestor_id`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastIndexableHierarchy->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `depth` ON `wp_yoast_indexable_hierarchy`(`depth`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `d...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `d...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `d...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', 'depth', Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20191011111109_WpYoastIndexableHierarchy.php(63): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', 'depth', Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\WpYoastIndexableHierarchy->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20191011111109, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `depth` ON `wp_yoast_indexable_hierarchy`(`depth`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\WpYoastIndexableHierarchy->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>ALTER TABLE wp_yoast_migrations CONVERT TO CHARACTER SET utf8mb4</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown operation: CONVERT.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('ALTER TABLE wp_...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(264): Yoast\WP\Lib\Migrations\Adapter->query('ALTER TABLE wp_...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200408101900_AddCollationToTables.php(41): Yoast\WP\Lib\Migrations\Migration->query('ALTER TABLE wp_...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up()
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200408101900, 'Yoast\\WP\\SEO\\Co...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#14 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#15 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#16 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#17 {main}</pre>
+ for query ALTER TABLE wp_yoast_migrations CONVERT TO CHARACTER SET utf8mb4 made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up, Yoast\WP\Lib\Migrations\Migration->query, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>ALTER TABLE wp_yoast_indexable CONVERT TO CHARACTER SET utf8mb4</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown operation: CONVERT.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('ALTER TABLE wp_...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(264): Yoast\WP\Lib\Migrations\Adapter->query('ALTER TABLE wp_...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200408101900_AddCollationToTables.php(41): Yoast\WP\Lib\Migrations\Migration->query('ALTER TABLE wp_...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up()
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200408101900, 'Yoast\\WP\\SEO\\Co...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#14 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#15 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#16 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#17 {main}</pre>
+ for query ALTER TABLE wp_yoast_indexable CONVERT TO CHARACTER SET utf8mb4 made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up, Yoast\WP\Lib\Migrations\Migration->query, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>ALTER TABLE wp_yoast_indexable_hierarchy CONVERT TO CHARACTER SET utf8mb4</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown operation: CONVERT.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('ALTER TABLE wp_...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(264): Yoast\WP\Lib\Migrations\Adapter->query('ALTER TABLE wp_...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200408101900_AddCollationToTables.php(41): Yoast\WP\Lib\Migrations\Migration->query('ALTER TABLE wp_...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up()
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200408101900, 'Yoast\\WP\\SEO\\Co...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#14 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#15 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#16 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#17 {main}</pre>
+ for query ALTER TABLE wp_yoast_indexable_hierarchy CONVERT TO CHARACTER SET utf8mb4 made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up, Yoast\WP\Lib\Migrations\Migration->query, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>ALTER TABLE wp_yoast_primary_term CONVERT TO CHARACTER SET utf8mb4</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown operation: CONVERT.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('ALTER TABLE wp_...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(264): Yoast\WP\Lib\Migrations\Adapter->query('ALTER TABLE wp_...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200408101900_AddCollationToTables.php(41): Yoast\WP\Lib\Migrations\Migration->query('ALTER TABLE wp_...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up()
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200408101900, 'Yoast\\WP\\SEO\\Co...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#14 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#15 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#16 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#17 {main}</pre>
+ for query ALTER TABLE wp_yoast_primary_term CONVERT TO CHARACTER SET utf8mb4 made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddCollationToTables->up, Yoast\WP\Lib\Migrations\Migration->query, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:03 UTC] PHP Warning:  Undefined array key 0 in /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php on line 342
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `object_id_and_type` ON `wp_yoast_indexable`(`object_id`, `object_type`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `o...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `o...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `o...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200430075614_AddIndexableObjectIdAndTypeIndex.php(26): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddIndexableObjectIdAndTypeIndex->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200430075614, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `object_id_and_type` ON `wp_yoast_indexable`(`object_id`, `object_type`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddIndexableObjectIdAndTypeIndex->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>SHOW KEYS FROM `wp_yoast_indexable`</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown show type: KEYS FROM.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-includes/class-wpdb.php(3146): WP_SQLite_DB->query('SHOW KEYS FROM ...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(304): wpdb->get_results('SHOW KEYS FROM ...', 'ARRAY_A')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(356): Yoast\WP\Lib\Migrations\Adapter->query('SHOW KEYS FROM ...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(725): Yoast\WP\Lib\Migrations\Adapter->select_all('SHOW KEYS FROM ...')
+#5 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(706): Yoast\WP\Lib\Migrations\Adapter->indexes('wp_yoast_indexa...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200616130143_ReplacePermalinkHashIndex.php(43): Yoast\WP\Lib\Migrations\Adapter->has_index('wp_yoast_indexa...', Array, Array)
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\ReplacePermalinkHashIndex->up()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200616130143, 'Yoast\\WP\\SEO\\Co...')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#16 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#18 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#19 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#20 {main}</pre>
+ for query SHOW KEYS FROM `wp_yoast_indexable` made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\ReplacePermalinkHashIndex->up, Yoast\WP\Lib\Migrations\Adapter->has_index, Yoast\WP\Lib\Migrations\Adapter->indexes, Yoast\WP\Lib\Migrations\Adapter->select_all, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>SHOW KEYS FROM `wp_yoast_indexable`</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown show type: KEYS FROM.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-includes/class-wpdb.php(3146): WP_SQLite_DB->query('SHOW KEYS FROM ...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(304): wpdb->get_results('SHOW KEYS FROM ...', 'ARRAY_A')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(356): Yoast\WP\Lib\Migrations\Adapter->query('SHOW KEYS FROM ...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(725): Yoast\WP\Lib\Migrations\Adapter->select_all('SHOW KEYS FROM ...')
+#5 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(706): Yoast\WP\Lib\Migrations\Adapter->indexes('wp_yoast_indexa...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200616130143_ReplacePermalinkHashIndex.php(55): Yoast\WP\Lib\Migrations\Adapter->has_index('wp_yoast_indexa...', Array, Array)
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\ReplacePermalinkHashIndex->up()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200616130143, 'Yoast\\WP\\SEO\\Co...')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#16 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#18 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#19 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#20 {main}</pre>
+ for query SHOW KEYS FROM `wp_yoast_indexable` made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\ReplacePermalinkHashIndex->up, Yoast\WP\Lib\Migrations\Adapter->has_index, Yoast\WP\Lib\Migrations\Adapter->indexes, Yoast\WP\Lib\Migrations\Adapter->select_all, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `permalink_hash_and_object_type` ON `wp_yoast_indexable`(`permalink_hash`, `object_type`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `p...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `p...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `p...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200616130143_ReplacePermalinkHashIndex.php(56): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\ReplacePermalinkHashIndex->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200616130143, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `permalink_hash_and_object_type` ON `wp_yoast_indexable`(`permalink_hash`, `object_type`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\ReplacePermalinkHashIndex->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>SHOW KEYS FROM `wp_yoast_seo_links`</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown show type: KEYS FROM.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-includes/class-wpdb.php(3146): WP_SQLite_DB->query('SHOW KEYS FROM ...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(304): wpdb->get_results('SHOW KEYS FROM ...', 'ARRAY_A')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(356): Yoast\WP\Lib\Migrations\Adapter->query('SHOW KEYS FROM ...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(725): Yoast\WP\Lib\Migrations\Adapter->select_all('SHOW KEYS FROM ...')
+#5 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(706): Yoast\WP\Lib\Migrations\Adapter->indexes('wp_yoast_seo_li...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200617122511_CreateSEOLinksTable.php(63): Yoast\WP\Lib\Migrations\Adapter->has_index('wp_yoast_seo_li...', Array, Array)
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\CreateSEOLinksTable->up()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200617122511, 'Yoast\\WP\\SEO\\Co...')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#16 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#18 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#19 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#20 {main}</pre>
+ for query SHOW KEYS FROM `wp_yoast_seo_links` made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\CreateSEOLinksTable->up, Yoast\WP\Lib\Migrations\Adapter->has_index, Yoast\WP\Lib\Migrations\Adapter->indexes, Yoast\WP\Lib\Migrations\Adapter->select_all, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `link_direction` ON `wp_yoast_seo_links`(`post_id`, `type`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `l...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `l...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `l...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_seo_li...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200617122511_CreateSEOLinksTable.php(64): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_seo_li...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\CreateSEOLinksTable->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200617122511, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `link_direction` ON `wp_yoast_seo_links`(`post_id`, `type`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\CreateSEOLinksTable->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `indexable_link_direction` ON `wp_yoast_seo_links`(`indexable_id`, `type`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `i...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `i...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `i...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_seo_li...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200617122511_CreateSEOLinksTable.php(76): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_seo_li...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\CreateSEOLinksTable->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200617122511, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `indexable_link_direction` ON `wp_yoast_seo_links`(`indexable_id`, `type`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\CreateSEOLinksTable->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `subpages` ON `wp_yoast_indexable`(`post_parent`, `object_type`, `post_status`, `object_id`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `s...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `s...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `s...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200702141921_CreateIndexableSubpagesIndex.php(35): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\CreateIndexableSubpagesIndex->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200702141921, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `subpages` ON `wp_yoast_indexable`(`post_parent`, `object_type`, `post_status`, `object_id`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\CreateIndexableSubpagesIndex->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>SHOW KEYS FROM `wp_yoast_indexable`</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown show type: KEYS FROM.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-includes/class-wpdb.php(3146): WP_SQLite_DB->query('SHOW KEYS FROM ...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(304): wpdb->get_results('SHOW KEYS FROM ...', 'ARRAY_A')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(356): Yoast\WP\Lib\Migrations\Adapter->query('SHOW KEYS FROM ...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(725): Yoast\WP\Lib\Migrations\Adapter->select_all('SHOW KEYS FROM ...')
+#5 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(706): Yoast\WP\Lib\Migrations\Adapter->indexes('wp_yoast_indexa...')
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200728095334_AddIndexesForProminentWordsOnIndexables.php(41): Yoast\WP\Lib\Migrations\Adapter->has_index('wp_yoast_indexa...', Array, Array)
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddIndexesForProminentWordsOnIndexables->up()
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200728095334, 'Yoast\\WP\\SEO\\Co...')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#16 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#18 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#19 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#20 {main}</pre>
+ for query SHOW KEYS FROM `wp_yoast_indexable` made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddIndexesForProminentWordsOnIndexables->up, Yoast\WP\Lib\Migrations\Adapter->has_index, Yoast\WP\Lib\Migrations\Adapter->indexes, Yoast\WP\Lib\Migrations\Adapter->select_all, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `prominent_words` ON `wp_yoast_indexable`(`prominent_words_version`, `object_type`, `object_sub_type`, `post_status`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `p...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `p...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `p...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20200728095334_AddIndexesForProminentWordsOnIndexables.php(42): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddIndexesForProminentWordsOnIndexables->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20200728095334, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `prominent_words` ON `wp_yoast_indexable`(`prominent_words_version`, `object_type`, `object_sub_type`, `post_status`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddIndexesForProminentWordsOnIndexables->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[17-Jul-2025 01:01:04 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>CREATE INDEX `published_sitemap_index` ON `wp_yoast_indexable`(`object_published_at`, `is_robots_noindex`, `object_type`, `object_sub_type`)</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: SAVEPOINT LEVEL1 | (no parameters)</li>
+<li>Executing: ROLLBACK TO SAVEPOINT LEVEL1 | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: Unknown create type: INDEX.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(313): WP_SQLite_DB->query('CREATE INDEX `p...')
+#2 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(368): Yoast\WP\Lib\Migrations\Adapter->query('CREATE INDEX `p...')
+#3 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/adapter.php(610): Yoast\WP\Lib\Migrations\Adapter->execute_ddl('CREATE INDEX `p...')
+#4 /var/www/html/wp-content/plugins/wordpress-seo/lib/migrations/migration.php(180): Yoast\WP\Lib\Migrations\Adapter->add_index('wp_yoast_indexa...', Array, Array)
+#5 /var/www/html/wp-content/plugins/wordpress-seo/src/config/migrations/20211020091404_AddObjectTimestamps.php(44): Yoast\WP\Lib\Migrations\Migration->add_index('wp_yoast_indexa...', Array, Array)
+#6 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(163): Yoast\WP\SEO\Config\Migrations\AddObjectTimestamps->up()
+#7 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(126): Yoast\WP\SEO\Initializers\Migration_Runner->run_migration(20211020091404, 'Yoast\\WP\\SEO\\Co...')
+#8 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(87): Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations('free')
+#9 /var/www/html/wp-content/plugins/wordpress-seo/src/initializers/migration-runner.php(74): Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations()
+#10 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(197): Yoast\WP\SEO\Initializers\Migration_Runner->initialize()
+#11 /var/www/html/wp-content/plugins/wordpress-seo/src/loader.php(132): Yoast\WP\SEO\Loader->load_initializers()
+#12 /var/www/html/wp-content/plugins/wordpress-seo/lib/abstract-main.php(54): Yoast\WP\SEO\Loader->load()
+#13 /var/www/html/wp-content/plugins/wordpress-seo/src/functions.php(34): Yoast\WP\Lib\Abstract_Main->load()
+#14 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo-main.php(445): YoastSEO()
+#15 /var/www/html/wp-content/plugins/wordpress-seo/wp-seo.php(50): require_once('/var/www/html/w...')
+#16 /var/www/html/wp-admin/includes/plugin.php(2387): include_once('/var/www/html/w...')
+#17 /var/www/html/wp-admin/includes/plugin.php(673): plugin_sandbox_scrape('wordpress-seo/w...')
+#18 /var/www/html/wp-admin/plugins.php(60): activate_plugin('wordpress-seo/w...', 'http://localhos...', false)
+#19 {main}</pre>
+ for query CREATE INDEX `published_sitemap_index` ON `wp_yoast_indexable`(`object_published_at`, `is_robots_noindex`, `object_type`, `object_sub_type`) made by activate_plugin, plugin_sandbox_scrape, include_once('/plugins/wordpress-seo/wp-seo.php'), require_once('/plugins/wordpress-seo/wp-seo-main.php'), YoastSEO, Yoast\WP\Lib\Abstract_Main->load, Yoast\WP\SEO\Loader->load, Yoast\WP\SEO\Loader->load_initializers, Yoast\WP\SEO\Initializers\Migration_Runner->initialize, Yoast\WP\SEO\Initializers\Migration_Runner->run_free_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migrations, Yoast\WP\SEO\Initializers\Migration_Runner->run_migration, Yoast\WP\SEO\Config\Migrations\AddObjectTimestamps->up, Yoast\WP\Lib\Migrations\Migration->add_index, Yoast\WP\Lib\Migrations\Adapter->add_index, Yoast\WP\Lib\Migrations\Adapter->execute_ddl, Yoast\WP\Lib\Migrations\Adapter->query, WP_SQLite_DB->query, WP_SQLite_DB->print_error
