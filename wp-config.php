@@ -93,6 +93,8 @@ define("WP_DEBUG", false);
 define("WP_SQLITE_OBJECT_CACHE_TIMEOUT", 20000); // Wait up to 20 seconds
 define("WP_SQLITE_OBJECT_CACHE_JOURNAL_MODE", "WAL"); // Use Write-Ahead Logging
 
+set_time_limit(120);
+
 /* That's all, stop editing! Happy publishing. */
 
 /** Absolute path to the WordPress directory. */

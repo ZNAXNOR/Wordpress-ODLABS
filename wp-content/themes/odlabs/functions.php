@@ -27,6 +27,14 @@ function odlabs_register_scripts()
     $version = wp_get_theme()->get("Version");
 
     wp_enqueue_script(
+        "odlabs-header",
+        get_template_directory_uri() . "/assets/js/Header.js",
+        [],
+        $version,
+        true
+    );
+
+    wp_enqueue_script(
         "odlabs-navigation",
         get_template_directory_uri() . "/assets/js/Navigation.js",
         [],
