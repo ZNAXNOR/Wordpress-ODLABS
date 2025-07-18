@@ -10,7 +10,7 @@
 
     <body>
     <!-- Top Navbar -->
-    <header class="bg-black">
+    <header class="bg-black sticky top-0 z-50">
         <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
             <!-- Mobile: Hamburger + Logo -->
             <div class="flex items-center gap-2 lg:hidden">
@@ -24,7 +24,9 @@
                     <i class="bi bi-list text-3xl text-white"></i>
                 </button>
                 <!-- Logo (right next to hamburger on mobile) -->
-                <a href="/index.html" class="-m-1.5 p-1.5">
+                <a href="<?php echo esc_url(
+                    site_url()
+                ); ?>" class="-m-1.5 p-1.5">
                     <span class="sr-only">OD LABS</span>
                     <img src="./wp-content/themes/odlabs/assets/images/OD-LABS-logo-2.svg" alt="OD LABS" width="158" height="48" />
                 </a>
@@ -32,7 +34,9 @@
 
             <!-- Company Logo (hidden on mobile, visible on lg+) -->
             <div class="hidden lg:flex lg:flex-1">
-                <a href="/index.html" class="-m-1.5 p-1.5">
+                <a href="<?php echo esc_url(
+                    site_url()
+                ); ?>" class="-m-1.5 p-1.5">
                     <span class="sr-only">OD LABS</span>
                     <img src="./wp-content/themes/odlabs/assets/images/OD-LABS-logo-2.svg" alt="OD LABS" width="158" height="48" />
                 </a>
@@ -222,10 +226,17 @@
                     </div>
                 </div>
 
-                <a href="/#who-can-use-our-services" class="text-sm/6 font-semibold text-white">Who Can Use Our Services</a>
-                <a href="/#goals" class="text-sm/6 font-semibold text-white">Our Goals</a>
-                <a href="/#testimonies" class="text-sm/6 font-semibold text-white">Testimonials</a>
-                <a href="/#contact" class="text-sm/6 font-semibold text-white">Contact Us</a>
+                <!-- <a href="/#who-can-use-our-services" class="text-sm/6 font-semibold text-white">Who Can Use Our Services</a> -->
+                <!-- <a href="/#goals" class="text-sm/6 font-semibold text-white">Our Goals</a> -->
+                <!-- <a href="/#testimonies" class="text-sm/6 font-semibold text-white">Testimonials</a> -->
+                <!-- <a href="/#contact" class="text-sm/6 font-semibold text-white">Contact Us</a> -->
+
+                <?php wp_nav_menu([
+                    "theme_location" => "primary-menu",
+                    "menu_class" =>
+                        "text-sm/6 font-semibold text-white hidden lg:flex lg:gap-x-12",
+                    "container" => false,
+                ]); ?>
             </div>
 
             <div class="hidden lg:flex lg:flex-1 lg:justify-end">
@@ -256,8 +267,10 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
                     </svg>
                 </button>
-                <!-- Logo (right next to cross) -->
-                <a href="/" class="-m-1.5 p-1.5">
+                <!-- Logo (right next to cross) -->                
+                    <a href="<?php echo esc_url(
+                        site_url()
+                    ); ?>" class="-m-1.5 p-1.5">
                     <span class="sr-only">OD LABS</span>
                     <img src="./wp-content/themes/odlabs/assets/images/OD-LABS-logo-2.svg" alt="OD LABS" width="158" height="48" />
                 </a>
@@ -412,10 +425,19 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="-mx-3 border-t border-gray-200/10 py-6">
+
+                        <div class="-mx-3 border-t border-gray-200/10 py-6">                            
+                            <?php wp_nav_menu([
+                                "theme_location" => "primary-menu",
+                                "menu_class" =>
+                                    "text-base/7 font-semibold text-white -mx-3 border-t border-gray-200/10 py-8",
+                                "items_class" =>
+                                    "hover:bg-brand-red block rounded-lg px-3 py-2",
+                                "container" => false,
+                            ]); ?>
                             <a
                                 href="/#who-can-use-our-services"
-                                class="hover:bg-brand-red block rounded-lg px-3 py-2 text-base/7 font-semibold text-white"
+                                class=""
                                 >Who Can Use Our Services</a
                             >
                             <a
