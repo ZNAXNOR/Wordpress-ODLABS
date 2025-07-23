@@ -19,10 +19,64 @@ function odlabs_theme_support()
     ]);
 }
 
+####################################################
+
+// Register menus
+register_nav_menus(
+    ["primary-menu" => "Top Navigation"],
+    ["footer-menu" => "Footer Navigation"]
+);
+
 add_action("after_setup_theme", "odlabs_theme_support");
 
-register_nav_menus(["primary-menu" => "Top Navigation"]);
+function add_additional_classes($classes, $item, $args)
+{
+    if (isset($args->a_class)) {
+        $classes[] = $args->a_class;
+    }
 
+    return $classes;
+}
+add_filter("nav_menu_css_class", "add_additional_classes", 10, 3);
+
+class NoListWalker extends Walker_Nav_Menu
+{
+    public function start_el(
+        &$output,
+        $item,
+        $depth = 0,
+        $args = null,
+        $current_object_id = 0
+    ) {
+        $classes = esc_attr(
+            implode(
+                " ",
+                apply_filters(
+                    "nav_menu_css_class",
+                    $item->classes,
+                    $item,
+                    $args,
+                    $depth
+                )
+            )
+        );
+        $url = esc_url($item->url);
+        $title = apply_filters("the_title", $item->title, $item->ID);
+
+        $output .= "<a href=\"$url\" class=\"$classes\">$title</a>\n";
+    }
+
+    public function end_el(&$output, $item, $depth = 0, $args = null)
+    {
+        // no additional markup
+    }
+}
+
+####################################################
+
+/**
+ * Enqueue styles and scripts for the theme.
+ */
 function odlabs_register_styles()
 {
     $version = wp_get_theme()->get("Version");

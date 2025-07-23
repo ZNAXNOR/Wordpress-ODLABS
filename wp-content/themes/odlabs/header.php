@@ -424,38 +424,21 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div>      
 
-                        <div class="-mx-3 border-t border-gray-200/10 py-6">                            
-                            <?php wp_nav_menu([
-                                "theme_location" => "primary-menu",
-                                "menu_class" =>
-                                    "text-base/7 font-semibold text-white -mx-3 border-t border-gray-200/10 py-8",
-                                "items_class" =>
-                                    "hover:bg-brand-red block rounded-lg px-3 py-2",
-                                "container" => false,
-                            ]); ?>
-                            <a
-                                href="/#who-can-use-our-services"
-                                class=""
-                                >Who Can Use Our Services</a
-                            >
-                            <a
-                                href="/#goals"
-                                class="hover:bg-brand-red block rounded-lg px-3 py-2 text-base/7 font-semibold text-white"
-                                >Our Goals</a
-                            >
-                            <a
-                                href="/#testimonies"
-                                class="hover:bg-brand-red block rounded-lg px-3 py-2 text-base/7 font-semibold text-white"
-                                >Testimonials</a
-                            >
-                            <a
-                                href="/#contact"
-                                class="hover:bg-brand-red block rounded-lg px-3 py-2 text-base/7 font-semibold text-white"
-                                >Contact Us</a
-                            >
-                        </div>
+                        <?php
+                        echo '<div class="-mx-3 border-t border-gray-200/10 py-6">';
+                        wp_nav_menu([
+                            "theme_location" => "primary-menu",
+                            "container" => false,
+                            "a_class" =>
+                                "hover:bg-brand-red block rounded-lg px-3 py-2 text-base/7 font-semibold text-white",
+                            "items_wrap" => '%3$s',
+                            "walker" => new NoListWalker(),
+                        ]);
+                        echo "</div>";
+                        ?>                        
+
                         <div class="-mx-3 border-t border-gray-200/10 py-6">
                             <a
                                 href="#"
