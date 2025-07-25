@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/*Fonts*/
+@import url("https://fonts.googleapis.com/css?family=Sora");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+@theme {
+  --font-sora: "Sora", sans-serif;
+  --font-notosans: "Noto Sans", sans-serif;
+}
+
 @property --border-angle {
   syntax: "<angle>";
   inherits: false;

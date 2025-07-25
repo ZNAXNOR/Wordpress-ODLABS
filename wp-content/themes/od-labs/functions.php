@@ -183,6 +183,13 @@ if (!function_exists("od_labs_block_stylesheets")):
                 "assets/css/button-outline.css"
             ),
         ]);
+
+        wp_enqueue_block_style("core/tailwindcss", [
+            "handle" => "od-labs-tailwindcss",
+            "src" => home_url("/src/output.css"),
+            "ver" => wp_get_theme(get_template())->get("Version"),
+            "path" => home_url("/src/output.css"),
+        ]);
     }
 endif;
 
@@ -280,6 +287,14 @@ function od_labs_register_styles()
     $version = wp_get_theme()->get("Version");
 
     wp_enqueue_style(
+        "od_labs-tailwind-css",
+        home_url("/src/output.css"),
+        [],
+        $version,
+        "all"
+    );
+
+    wp_enqueue_style(
         "od_labs-bootstrap-icons",
         "https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css",
         [],
@@ -319,7 +334,7 @@ function od_labs_register_scripts()
         "https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4",
         [],
         "4",
-        "all"
+        true
     );
 }
 
