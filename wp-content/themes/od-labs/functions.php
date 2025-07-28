@@ -221,7 +221,7 @@ endif;
 add_action("init", "od_labs_pattern_categories");
 
 /**
- * Register pattern categories.
+ * Register Navigation Classes
  */
 
 register_nav_menus(

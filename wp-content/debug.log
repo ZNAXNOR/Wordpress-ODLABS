@@ -1299,3 +1299,34 @@ Stack trace:
 [24-Jul-2025 12:52:18 UTC] PHP Warning:  Undefined property: WP_Block_Template::$media in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-templates.php on line 233
 [24-Jul-2025 12:52:19 UTC] PHP Warning:  Undefined property: WP_Block_Template::$media in /var/www/html/wp-content/plugins/create-block-theme/includes/create-theme/theme-templates.php on line 261
 [24-Jul-2025 13:21:34 UTC] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 32768 bytes) in /var/www/html/wp-includes/blocks/blocks-json.php on line 3
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:04:33 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[25-Jul-2025 07:20:48 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 534
+[25-Jul-2025 07:23:08 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 534
+[25-Jul-2025 07:27:10 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 534
