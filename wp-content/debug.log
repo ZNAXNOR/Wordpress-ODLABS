@@ -1330,3 +1330,541 @@ Stack trace:
 [25-Jul-2025 07:20:48 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 534
 [25-Jul-2025 07:23:08 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 534
 [25-Jul-2025 07:27:10 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 534
+[26-Jul-2025 13:45:12 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 510
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:11 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:04:44 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:08:50 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:20:25 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[26-Jul-2025 14:24:28 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 10:59:53 UTC] PHP Fatal error:  Maximum execution time of 120 seconds exceeded in /var/www/html/wp-includes/Requests/src/Transport/Curl.php on line 205
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:01:59 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 68
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Undefined array key "counts" in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:02:00 UTC] PHP Warning:  Trying to access array offset on null in /var/www/html/wp-content/plugins/pojo-accessibility/modules/scanner/components/list-column.php on line 69
+[28-Jul-2025 11:19:56 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_optimized_size_keys` successfully executed.
+[28-Jul-2025 11:19:56 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_mime_type` successfully executed.
+[28-Jul-2025 11:19:56 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_avif_with_zero_dimensions` successfully executed.
+[28-Jul-2025 11:19:56 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Components\Actions_Cleanup->cleanup_stuck_operations(): No stuck optimization operations found for cleanup.
+[28-Jul-2025 11:20:14 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[28-Jul-2025 11:20:22 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[28-Jul-2025 11:22:27 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[28-Jul-2025 11:22:36 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[28-Jul-2025 11:24:54 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 197
+[28-Jul-2025 11:25:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 197
+[28-Jul-2025 11:25:01 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): Start optimization of 170
+[28-Jul-2025 11:25:08 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Optimization\Classes\Optimize_Image->optimize(): End optimization of 170
+[28-Jul-2025 13:47:55 UTC] WordPress database error <div style="clear:both">&nbsp;</div>
+<div class="queries" style="clear:both;margin-bottom:2px;border:red dotted thin;">
+<p>MySQL query:</p>
+<p>DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_update_plugins'</p>
+<p>Queries made or created this session were:</p>
+<ol>
+<li>Executing: BEGIN | (no parameters)</li>
+<li>Executing: DELETE FROM `wp_options` WHERE `option_name` = :param0  | parameters: _site_transient_update_plugins</li>
+<li>Executing: select changes() | (no parameters)</li>
+<li>Executing: COMMIT | (no parameters)</li>
+</ol>
+</div>
+<div style="clear:both;margin-bottom:2px;border:red dotted thin;" class="error_message" style="border-bottom:dotted blue thin;">
+Error occurred at line 4166 in Function <code>handle_error</code>. Error message was: SQLSTATE[HY000]: General error: 10 disk I/O error.
+</div>
+<p>Backtrace:</p>
+<pre>#0 /var/www/html/wp-content/mu-plugins/sqlite-database-integration/wp-includes/sqlite/class-wp-sqlite-db.php(287): WP_SQLite_Translator->get_error_message()
+#1 /var/www/html/wp-includes/class-wpdb.php(2790): WP_SQLite_DB->query('DELETE FROM `wp...')
+#2 /var/www/html/wp-includes/option.php(1230): wpdb->delete('wp_options', Array)
+#3 /var/www/html/wp-includes/option.php(2290): delete_option('_site_transient...')
+#4 /var/www/html/wp-includes/option.php(1968): delete_network_option(1, '_site_transient...')
+#5 /var/www/html/wp-includes/option.php(2510): delete_site_option('_site_transient...')
+#6 phar:///tmp/wp-cli.phar/vendor/wp-cli/extension-command/src/WP_CLI/CommandWithUpgrade.php(549): delete_site_transient('update_plugins')
+#7 phar:///tmp/wp-cli.phar/vendor/wp-cli/extension-command/src/Plugin_Command.php(1519): WP_CLI\CommandWithUpgrade->_list(Array, Array)
+#8 [internal function]: Plugin_Command->list_(Array, Array)
+#9 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/CommandFactory.php(100): call_user_func(Array, Array, Array)
+#10 [internal function]: WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}(Array, Array)
+#11 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Dispatcher/Subcommand.php(497): call_user_func(Object(Closure), Array, Array)
+#12 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(470): WP_CLI\Dispatcher\Subcommand->invoke(Array, Array, Array)
+#13 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(493): WP_CLI\Runner->run_command(Array, Array)
+#14 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Runner.php(1295): WP_CLI\Runner->run_command_and_exit()
+#15 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/WP_CLI/Bootstrap/LaunchRunner.php(28): WP_CLI\Runner->start()
+#16 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/bootstrap.php(84): WP_CLI\Bootstrap\LaunchRunner->process(Object(WP_CLI\Bootstrap\BootstrapState))
+#17 phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php(35): WP_CLI\bootstrap()
+#18 phar:///tmp/wp-cli.phar/php/boot-phar.php(20): include('phar:///tmp/wp-...')
+#19 /tmp/wp-cli.phar(4): include('phar:///tmp/wp-...')
+#20 /tmp/run-cli.php(37): require('/tmp/wp-cli.pha...')
+#21 {main}</pre>
+ for query DELETE FROM `wp_options` WHERE `option_name` = '_site_transient_update_plugins' made by require('/tmp/wp-cli.phar'), include('phar:///tmp/wp-cli.phar/php/boot-phar.php'), include('phar:///tmp/wp-cli.phar/vendor/wp-cli/wp-cli/php/wp-cli.php'), WP_CLI\bootstrap, WP_CLI\Bootstrap\LaunchRunner->process, WP_CLI\Runner->start, WP_CLI\Runner->run_command_and_exit, WP_CLI\Runner->run_command, WP_CLI\Dispatcher\Subcommand->invoke, call_user_func, WP_CLI\Dispatcher\CommandFactory::WP_CLI\Dispatcher\{closure}, call_user_func, Plugin_Command->list_, WP_CLI\CommandWithUpgrade->_list, delete_site_transient, delete_site_option, delete_network_option, delete_option, WP_SQLite_DB->query, WP_SQLite_DB->print_error
+[28-Jul-2025 16:38:40 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:38:40 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 16:39:07 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:39:08 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 16:39:21 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:39:21 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 16:40:38 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:40:38 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 16:41:11 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:41:11 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 16:43:59 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/home.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:43:59 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:44:00 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/home.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:44:00 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 16:44:01 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:01 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:02 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:02 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:03 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:03 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:04 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:04 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:05 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:05 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:06 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:06 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:06 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:07 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:07 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:08 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:44:08 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-blog-header.php(13): require_once('/var/www/html/w...')
+#10 /var/www/html/index.php(17): require('/var/www/html/w...')
+#11 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:45:01 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#10 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:47:01 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#10 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:49:02 UTC] PHP Fatal error:  Uncaught ValueError: Path cannot be empty in /var/www/html/wp-includes/functions.php:6900
+Stack trace:
+#0 /var/www/html/wp-includes/functions.php(6900): file_get_contents('', false, NULL, 0, 8192)
+#1 /var/www/html/wp-includes/class-wp-theme.php(1904): get_file_data(false, Array)
+#2 /var/www/html/wp-includes/block-patterns.php(374): WP_Theme->get_block_patterns()
+#3 /var/www/html/wp-includes/class-wp-hook.php(324): _register_theme_block_patterns('')
+#4 /var/www/html/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters(NULL, Array)
+#5 /var/www/html/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#6 /var/www/html/wp-settings.php(727): do_action('init')
+#7 /var/www/html/wp-config.php(106): require_once('/var/www/html/w...')
+#8 /var/www/html/wp-load.php(50): require_once('/var/www/html/w...')
+#9 /var/www/html/wp-admin/admin-ajax.php(22): require_once('/var/www/html/w...')
+#10 {main}
+  thrown in /var/www/html/wp-includes/functions.php on line 6900
+[28-Jul-2025 16:58:46 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 16:58:47 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 17:06:57 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 17:06:57 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[28-Jul-2025 17:09:05 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/single.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
+[28-Jul-2025 17:09:06 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14

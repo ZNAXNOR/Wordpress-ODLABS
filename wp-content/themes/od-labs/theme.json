@@ -947,11 +947,6 @@
       "area": "uncategorized",
       "name": "post-meta",
       "title": "Post Meta"
-    },
-    {
-      "area": "header",
-      "name": "od-header",
-      "title": "OD Header"
     }
   ],
   "version": 3,
