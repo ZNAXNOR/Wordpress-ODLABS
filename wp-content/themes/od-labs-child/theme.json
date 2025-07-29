@@ -1,9 +1,55 @@
 {
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#e94235",
+          "name": "Brand Red",
+          "slug": "od-red"
+        },
+        {
+          "color": "#FFF8E2",
+          "name": "Brand Yellow",
+          "slug": "od-yellow"
+        },
+        {
+          "color": "#000000",
+          "name": "Brand Black",
+          "slug": "od-black"
+        },
+        {
+          "color": "#ffffff",
+          "name": "Brand White",
+          "slug": "od-white"
+        },
+        {
+          "color": "#DDDDDD",
+          "name": "Brand BG Grey",
+          "slug": "od-bg-grey"
+        },
+        {
+          "color": "#99A1AF",
+          "name": "Brand Text Grey",
+          "slug": "od-text-grey"
+        }
+      ]
+    }
+  },
   "templateParts": [
     {
       "area": "header",
       "name": "od-header",
       "title": "OD Header"
+    },
+    {
+      "area": "tailwind-header",
+      "name": "tw-header",
+      "title": "Tailwind Header"
+    },
+    {
+      "area": "footer",
+      "name": "od-footer",
+      "title": "OD Footer"
     }
   ],
   "version": 3,
