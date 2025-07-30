@@ -1884,3 +1884,249 @@ Stack trace:
 [29-Jul-2025 03:55:31 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
 [29-Jul-2025 03:56:09 UTC] PHP Warning:  file_get_contents(/var/www/html/wp-content/themes/od-labs-child/templates/home.html): Failed to open stream: No such file or directory in /var/www/html/wp-includes/block-template-utils.php on line 602
 [29-Jul-2025 03:56:09 UTC] PHP Warning:  Cannot modify header information - headers already sent by (output started at /var/www/html/wp-includes/block-template-utils.php:602) in /var/www/html/wp-admin/admin-header.php on line 14
+[30-Jul-2025 11:35:39 UTC] [Site Mailer]: error in SiteMailer\Modules\Settings\Module::refresh_plan_data(): Invalid connect data
+[30-Jul-2025 11:35:39 UTC] [Site Mailer]: error in SiteMailer\Modules\Settings\Module::refresh_plan_data(): Invalid connect data
+[30-Jul-2025 11:35:39 UTC] [Site Mailer]: error in SiteMailer\Modules\Settings\Module::refresh_plan_data(): Invalid connect data
+[30-Jul-2025 11:35:45 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [Content-Type] => application/json
+        )
+
+    [body] => {"redirect_uri":"http:\/\/localhost:8881\/wp-admin\/options-general.php?page=site-mailer-settings","app_type":"app_mailer"}
+    [timeout] => 30
+)
+
+[30-Jul-2025 11:36:08 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => authorization_code
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+            [code] => ory_ac_AH6iP2t2cpg_wY3t73WDIBSkmEGECmb1yVWusVZkjcM.LqSlF-zH4YNvMJa8OIyWAb3wRGrfGUL8n1jjFiE8F8Q
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 11:44:14 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 11:49:29 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 11:54:32 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:00:18 UTC] [Site Mailer]: error in SiteMailer\Modules\Settings\Module::refresh_plan_data(): cURL error 35: OpenSSL SSL_connect: SSL_ERROR_SYSCALL in connection to my.elementor.com:443 
+[30-Jul-2025 12:00:24 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:00:24 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:00:24 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:00:24 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:10:57 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:33:49 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:39:00 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
+[30-Jul-2025 12:39:24 UTC] Array
+(
+    [method] => POST
+    [headers] => Array
+        (
+            [x-elementor-app-type] => APP_MAILER
+            [x-elementor-apps] => site-mailer
+            [Authorization] => Basic M2MzMjUzMTMtYWY4NS00ZDY3LTljZTQtYWYzYTY0ZTA2NGI2Okc4Y0ZlQW0zUmZWUFh2bklZLUgwfkNSMGp3
+        )
+
+    [body] => Array
+        (
+            [grant_type] => client_credentials
+            [redirect_uri] => http://localhost:8881/wp-admin/options-general.php?page=site-mailer-settings
+        )
+
+    [timeout] => 30
+)
+
